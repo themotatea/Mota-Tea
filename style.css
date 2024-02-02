@@ -1,0 +1,426 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Arial', sans-serif;
+}
+.image {
+  height: 380px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("Tea\ garden\ 6.jpg");
+  filter: brightness(85%);
+}
+
+/* Style the header section */
+header {
+  color: #1f1f29;
+  padding: 20px 0;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #f0f0f5;
+
+}
+
+.header-video {
+  max-width: 100%;
+  height: 200px;
+  display: block;
+  margin-top: 10px;
+}
+
+header .brand-name {
+  margin-top: -160px;
+  font-size: 75px;
+  font-style: italic;
+  font-family:serif ;
+}
+
+/* Style the navigation menu */
+nav {
+  width: auto;
+  font-size: xx-large;
+  padding-top: 5px; /* Add padding or margin to create space between the header and the navigation menu*/ 
+  z-index: 999; /* Adjust the z-index to be lower than the header's z-index */
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  color: #1f1f29;
+  padding: 10px 20px;
+}
+
+/* Style the main content area */
+.home {
+  padding: 20px;
+  
+}
+.home-section {
+  background-color: #f5f5fa;
+  padding: 50px 20px;
+  text-align: center;
+  
+}
+
+.home-section h1 {
+  font-size: 36px;
+  font-family: 'Exo', sans-serif;
+  margin-bottom: 20px;
+}
+
+.home-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.product-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backface-visibility: visible;
+}
+.product-heading {
+  font-size: 36px;
+  font-family:'Exo', sans-serif;
+  font-size: 3em;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  text-align: center;
+  text-decoration: underline;
+  
+}
+.product-item {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.product-item img {
+  display: flex;
+  max-width: 500px;
+  max-height: 500px; 
+  margin-right: 20px;
+}
+.hover-effect {
+  transition: transform 0.3s ease; /* Add a smooth transition for the hover effect */
+}
+
+.hover-effect:hover {
+  transform: scale(1.1); /* Scale the image on hover (you can adjust the scale factor as needed) */
+  /* Add any other hover effects or animations here */
+}
+
+.product-content {
+  flex: 1;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.product-content h3{
+  font-family:  'Galdeano', sans-serif;
+  font-size: xx-large;
+}
+.product-content p {
+  font-family:'Imprima', sans-serif;
+  font-size: large;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .product-section {
+    flex-direction: column;
+  }
+
+  .product-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-item img {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+.about-section {
+  text-align: center;
+  padding: 20px; /* Add padding around the section */
+  position: relative;
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.about-heading {
+  font-size: 3em; /* Adjust the font size as needed */
+  margin-bottom: 20px; /* Add spacing between the heading and content */
+  font-family: 'Exo', sans-serif;;
+  color: #1f1f29;
+}
+
+.about-content {
+  text-align: center; /* Align the content to the left */
+  color: #1f1f29;
+  font-size: x-large;
+}
+
+
+/* Style the footer section */
+.main-footer {
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px; /* Add padding to the footer content to ensure it's visible */
+}
+.main-footer ul {
+  list-style: none;
+}
+.main-footer h1 {
+  font-size: 22px;
+  line-height: 117%;
+  color: #1f1f29;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.main-footer h2 {
+  color: #1f1f29;
+  font-weight: 500;
+}
+.main-footer ul li a {
+  color: #1f1f29;
+  text-decoration: none;
+}
+footer {
+  padding: 50px; /* Add padding to the footer content to ensure it's visible */
+  font-size: 17px;
+  padding: 15px 5px;
+  color: #1f1f29;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: #1f1f29;
+}
+.logoinfo p {
+  color: #000000;
+  font-size: 17px;
+  margin-top: 5px;
+}
+.contact-details {
+  margin-top: 20px;
+}
+.contact-details li {
+  list-style: none;
+  margin: 10px 0;
+}
+.contact-details li a {
+  text-decoration: none;
+  color: #1f1f29;
+}
+.contact-details .fa {
+  color: #1f1f29;
+  margin-right: 10px;
+}
+.sociallogos {
+  padding: 20px 0;
+}
+.sociallogos .logobox a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 22px;
+}
+.com ul li {
+  padding: 5px 0;
+}
+@media only screen and (max-width: 749px) {
+  .main-footer {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .info {
+    padding: 20px 0;
+  }
+}
+@media (max-width: 480px) {
+  .main-footer {
+    grid-template-columns: 1fr;
+  }
+  .sociallogos {
+    padding: 20px 0;
+  }
+  .com {
+    padding: 20px 0;
+  }
+}
+
+/* Highlight important elements in red */
+.highlight {
+  color: #d41515;
+}
+.main-section {
+  position: relative;
+  z-index: 3;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.main-container {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: space-between;
+}
+.main-section-header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.main-section-header h2 {
+  color: #1f1f29;
+  font-weight: bold;
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-family: 'Exo', sans-serif;;
+}
+.main-section-header p {
+  color: #1f1f29;
+}
+.main-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-info-section {
+  width: 40%;
+  padding-left: 10px;
+}
+.contact-info-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.contact-info-content {
+  margin-left: 20px;
+}
+.contact-info-content h4 {
+  color: #1f1f29;
+  font-style: underline ;
+  text-decoration: underline;
+  font-size: 1.4em;
+  margin-bottom: 5px;
+}
+.contact-info-content p {
+  color: #1f1f29;
+  font-size: 1em;
+}
+.timings{
+  text-decoration: underline ;
+}
+.contact-info-content h4 img {
+  margin-bottom: 5px;
+  margin-right: 10px; /* Add spacing between the icon and the text */
+}
+
+.contact-form-section {
+  background-color: #d4d4d4;
+  padding: 40px;
+  width: 45%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.contact-form-section h2 {
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #1f1f29;
+}
+.input-container {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.input-container input,
+.input-container textarea {
+  width: 100%;
+  background-color: #d4d4d4;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.input-container span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #1f1f29;
+}
+.input-container input:focus~span,
+.input-container textarea:focus~span {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.input-container input[type="submit"] {
+  width: 100%;
+  background: #12d400;
+  color: #1f1f29;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #12d400;
+  transition: 0.5s;
+}
+.input-container input[type="submit"]:hover {
+  background: #1f1f29;
+  color: #12d400;
+}
+@media (max-width: 991px) {
+  .main-section {
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+  .main-row {
+      flex-direction: column;
+  }
+  .contact-info-section {
+      margin-bottom: 40px;
+      width: 100%;
+  }
+  .contact-form-section {
+      width: 100%;
+  }
+}
